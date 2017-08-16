@@ -1,0 +1,94 @@
+.insertReview{
+	position:fixed;
+	z-index:55;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+}
+.c_ir{
+	position:absolute;
+	width:100%;
+	bottom:0;
+	background-color:#f6f5f4;
+}
+.title_container_ir{
+	height:40px;
+	line-height: 40px;
+	background-color:#dededd;
+	text-align:center;
+	color:#4b4b4b;
+	font-size:16px;
+}
+.leaf_list_ir {
+	display: flex;
+	align-items: center;
+}
+.list_insertReview{
+	height:40vh;
+	overflow:scroll;
+	padding:0 18px;
+}
+
+.help_leaf_listir:first-child{
+	margin-top:20px;
+}
+.help_leaf_listir{
+	margin-bottom:18px;
+}
+.select_activity{
+	vertical-align: middle;
+	padding-right:15px;
+	position:relative;
+}
+.select_activity input{
+	opacity:0;
+	position:absolute;
+	/*z-index:-11;*/
+}
+.title_data_select{
+	font-size:14px;
+	color:#595656;
+	line-height:20px;
+}
+.time_data_select{
+	margin-top:4px;
+	font-size:12px;
+	color:#9fa0a0;
+}
+.footer_cir{
+	border-top:1px solid #e2e2e3;
+	padding:10px;
+	/*text-align:center;*/
+}
+.sb_cir,.ca_cir{
+	padding:5px 55px;
+	border-radius:4px;
+	font-size:16px;
+	color:white;
+}
+.sb_cir{
+	float:left;
+	background-color:#ca524d;
+}
+.ca_cir{
+	float:right;/*
+	margin-left:10px;*/
+	color:#717373;
+	background-color:#d8dcda;
+}
+.selectCheckIcon{
+	width:14px;
+	height:14px;
+	background:url(/images/post/unchecked.png) no-repeat;
+	background-size:14px 14px;
+}
+input:checked+.selectCheckIcon{
+	background-image:url(/images/post/checked.png);
+}
+.footer_cir::after{
+	content:"";
+	display:block;
+	clear:both;
+}

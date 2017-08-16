@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/froala_editor.css">
+  <link rel="stylesheet" href="../css/froala_style.css">
+  <link rel="stylesheet" href="../css/plugins/code_view.css">
+  <link rel="stylesheet" href="../css/plugins/colors.css"><!-- 
+  <link rel="stylesheet" href="../css/plugins/emoticons.css">
+  <link rel="stylesheet" href="../css/plugins/image_manager.css"> -->
+  <link rel="stylesheet" href="../css/plugins/image.css"><!-- 
+  <link rel="stylesheet" href="../css/plugins/line_breaker.css">
+  <link rel="stylesheet" href="../css/plugins/table.css">
+  <link rel="stylesheet" href="../css/plugins/char_counter.css">
+  <link rel="stylesheet" href="../css/plugins/video.css">
+  <link rel="stylesheet" href="../css/plugins/fullscreen.css">
+  <link rel="stylesheet" href="../css/plugins/file.css"> -->
+  <link rel="stylesheet" href="../css/plugins/quick_insert.css">
+  <link rel="stylesheet" href="../css/codemirror.min.css">
+
+  <style>
+
+
+ </style>
+</head>
+
+<body>
+<div class="loading">Loading&#8230;</div>
+  <div id="editor">
+    <div id='edit' style="margin-top: 30px;">
+      <h1>Full Featured BR</h1>
+    </div>
+    <button onclick="showPreview()">preview</button>
+  </div>
+  <div id="display2">""</div>s
+  <div id="pagePreview" class="fr-view">
+    <div class="btn-arr">
+    <button onclick="closePreview()" class='cp-button'>关闭预览</button>
+    <button style="margin-left:30px;">提交文本</button>
+    </div>
+    <div id="previewContent"></div>
+  </div>
+
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/codemirror.min.js"></script>
+  <script type="text/javascript" src="../js/xml.min.js"></script>
+  <script type="text/javascript" src="../js/froala_editor.min.js" ></script>
+  <script type="text/javascript" src="../js/plugins/align.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/code_beautifier.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/code_view.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/colors.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/draggable.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/emoticons.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/font_size.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/font_family.min.js"></script>
+  <script>
+    $('<script>').attr('src','../js/plugins/image2.min.js?t='+(+new Date())).appendTo($('body'));
+  </script>
+  <!--   <script type="text/javascript" src="../js/plugins/image2.min.js"></script> -->
+<!--   <script type="text/javascript" src="../js/plugins/file.min.js"></script> -->
+  <!-- <script type="text/javascript" src="../js/plugins/image_manager.min.js"></script> -->
+ <!--  <script type="text/javascript" src="../js/plugins/line_breaker.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/link.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/lists.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/paragraph_format.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/paragraph_style.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/video.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/table.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/url.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/entities.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/char_counter.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/inline_style.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/save.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/fullscreen.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/quote.min.js"></script> -->
+
+  <script>
+  /*  $(function(){
+      $('#edit').froalaEditor({
+        enter: $.FroalaEditor.ENTER_BR
+      })
+    });*/
+    $(function() {
+      $('#edit').froalaEditor({
+        toolbarButtonsXS: ['bold','color',/*'italic', */'underline','fontSize','insertImage'],
+        language: 'zh_cn'
+      });
+      setTimeout(function(){
+        //$('#edit').find('.fr-wrapper').next().remove()
+      },0);
+    });
+
+    var currentScrollTop=0;
+    function showPreview(){
+      var html=($('#edit').froalaEditor('html.get'));
+      $('#pagePreview').addClass("fullscreen").find("#previewContent").html(html);
+      currentScrollTop=$('body').scrollTop();
+      $('html, body').animate({scrollTop:0},0);
+    }
+    function closePreview(){
+      $('#pagePreview').removeClass("fullscreen");
+      $('html, body').animate({scrollTop:currentScrollTop},0);
+    }
+  </script>
+</body>
+</html>

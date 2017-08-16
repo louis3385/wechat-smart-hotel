@@ -1,0 +1,73 @@
+.relatedP_detail_vue{
+	padding-top:42px;
+}
+.banner_rp_dv{
+	font-size:12px;	
+	color:rgb(106,119,184);
+	margin-bottom:25px;
+}
+.container_rp_dv{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	border:1px solid rgb(237,239,242);
+	border-radius:3px;
+}
+.left_container_rpdv{
+	width: 100px;
+	height:100px;
+}
+.img_left_crv{
+	width:100%;
+	height:100%;
+}
+.right_container_rpdv{
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+    padding: 15px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+}
+
+.title_right_crpdv{
+	color:rgb(61,61,61);
+	font-size:15px;
+	line-height:21px;
+	margin-bottom:11px;
+}
+.detail_right_crpdv{
+	font-size:12px;
+	color:rgb(135,142,168);
+}
+.icon_place_drpv,.txt_place_drpv,
+.icon_date_drpv,.txt_date_drpv{
+	display: inline-block;
+	vertical-align: middle;
+
+}
+.icon_place_drpv,.icon_date_drpv{
+	background-size:17px 17px;
+	width:17px;
+	height:17px;
+}
+.icon_place_drpv{
+	background-image:url('/images/detail/ic_location.png');
+}
+.icon_date_drpv{
+	background-image:url('/images/detail/ic_time.png');
+}
+
+@media(max-width:330px){
+	.right_container_rpdv{
+   		padding: 10px;	
+	}
+}

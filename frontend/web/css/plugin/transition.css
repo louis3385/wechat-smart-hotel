@@ -1,0 +1,25 @@
+.fade-transition{
+  transition: all .3s ease;
+}
+.fade-enter,.fade-leave{
+	height:0;
+	opacity:0;
+}
+.expand-transition{
+	transition:all .3s ease-in-out;
+	will-change:transform;
+}
+.expand-enter,.expand-leave{
+	-webkit-transform:translate3d(0,100%,0) !important;
+	        transform:translate3d(0,100%,0) !important;
+	        opacity: 0;
+}
+
+.rise-transition{
+	transition:all .3s ease;
+}
+
+.rise-enter,.rise-leave{
+	-webkit-transform:translate3d(0,100%,0) !important;
+	        transform:translate3d(0,100%,0) !important;
+}

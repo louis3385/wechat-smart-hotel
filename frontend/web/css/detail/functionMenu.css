@@ -1,0 +1,181 @@
+.menu_detail_vue{
+	bottom:0;
+	left:0;
+	position:fixed;
+	z-index:11;
+	width:100%;
+	padding:6px 8px 6px 28px;
+	background-color:rgb(250,250,252);
+	box-shadow:0 1px 0 0 rgba(216,219,235,0.9);
+	box-sizing: border-box;
+	border-top:1px solid rgba(216,219,235,0.9);    
+	display: -webkit-flex;    
+	display: -ms-flexbox;    
+	display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+}
+.menu_detail_vue.review{
+	padding:6px 8px 6px 8px;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.iconPost_menu_dv,
+.iconTele_menu_dv,
+.iconCancel_menu_dv,
+.iconProof_menu_dv,
+.iconReview_menu_dv{
+	background-size:22px 22px;
+	width:22px;
+	height:22px;
+	display: inline-block;
+	position:relative;
+}
+.txtPost_menu_dv,
+.txtTele_menu_dv,
+.txtCancel_menu_dv,
+.txtProof_menu_dv,
+.txtReview_menu_dv{
+	font-size: 9px;
+    color: rgb(135,142,168);
+    text-align: center;
+    margin-top:3px;
+	/*position: absolute;
+    font-size: 9px;
+    color: rgb(135,142,168);
+    white-space: nowrap;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);*/
+}
+.iconPost_menu_dv{
+	background-image:url('/images/detail/icAddActivity@2x.png') ;
+}
+.iconTele_menu_dv{
+	background-image:url('/images/detail/icCall@2x.png') ;
+}
+.iconCancel_menu_dv{
+	background-image:url('/images/detail/icCancel@2x.png') ;
+}
+.iconProof_menu_dv{
+	background-image:url('/images/detail/icQRCode@2x.png') ;
+}
+.iconReview_menu_dv{
+	background-image:url('/images/detail/icComment@2x.png') ;
+}
+.state_menu_dv{
+	padding: 9px;
+    display: inline-block;
+    font-size: 17px;
+    color: rgb(182,184,191);
+    background-color: rgb(237,239,242);
+    height: 37px;
+    box-sizing: border-box;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+    border:1px solid rgba(0,0,0,0.12);
+}
+.state_men_dv.over{
+	background-color:rgb(168,170,179);
+	color:white;
+}
+.boxTele_menu_dv,
+.boxCancel_menu_dv,
+.boxProof_menu_dv,
+.boxReview_menu_dv{
+	margin-left:35px;
+}
+.state_menu_dv,.bookAction_menu_dv{
+	text-align: center;
+	margin-left:38px;
+}
+.bookAction_menu_dv{
+	padding:9px;
+	box-sizing: border-box;
+	color:white;
+	background-color:rgb(108,126,217);
+	-webkit-flex:1;
+	    -ms-flex:1;
+	        flex:1;
+}
+.bookAction_menu_dv.wp{
+	background-color:rgb(106,119,184);
+	
+}
+
+
+
+
+
+
+.popQrcode{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100vh;
+	z-index:23;
+	background-color:rgba(0,0,0,0.5);
+}
+.info_popQrcode{
+	padding: 28px 32px;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius:6px;
+    -webkit-transform: translateX(-50%)translateY(-50%);
+        -ms-transform: translateX(-50%)translateY(-50%);
+            transform: translateX(-50%)translateY(-50%);
+}
+.canvas_info_popQrcode{
+	width: 225px;
+    height: 225px;
+    padding-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.tip_info_popQrcode{
+	text-align:center;
+	font-size:12px;
+	color:rgb(61,61,61);
+	margin:12px 0 24px 0;
+}
+.name_detail_ip::after,
+.fee_detail_ip::after,
+.time_detail_ip::after{
+	content:'';
+	clear:both;
+	display: block;
+}
+.left_name_dip,
+.left_fee_dip,
+.left_time_dip{
+	float:left;
+}
+.right_name_dip,
+.right_fee_dip,
+.right_time_dip{
+	float:right;
+}
+.detail_info_popQrcode{
+	font-size:14px;
+	color:rgb(61,61,61);
+}
+.name_detail_ip{
+	font-size:16px;
+}
+.fee_detail_ip{
+	margin:12px 0 8px 0;
+}
+.popQrcode{
+	text-align:center;
+}

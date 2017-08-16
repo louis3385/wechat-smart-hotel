@@ -1,0 +1,157 @@
+body{
+	background-color:rgb(237,239,242);
+}
+.container_detail_vue{
+	padding:16px 20px 0 20px;
+	background-color:white;
+}
+.container_detail_vue.host{
+	padding-top:70px;
+}
+.title_head_dv{
+	font-size:18px;
+	line-height:30px;
+	color:rgb(25,25,25);
+}
+.other_head_dv{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	font-size:12px;
+	color:rgb(168,170,179);
+	padding-bottom:18px;
+	border-bottom:1px solid rgb(220,221,224);
+	margin-top:14px;
+}
+.head_left_ohdv{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background-size:30px 30px;
+}
+.name_left_ohdv{
+	font-size:12px;
+	color:rgb(106,119,184);
+	margin:0 15px 0 10px;
+	max-width: 70px;
+}
+.visitor_right_ohdv,
+.share_right_ohdv{
+	margin-left:10px;
+}
+.left_other_hdv{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.info_detail_v{
+	padding:22px 0;
+	font-size:14px;
+	color:rgb(61,61,61);
+	border-bottom:1px solid rgb(220,221,224);
+}
+.remain_info_dv{
+	margin:18px 0;
+}
+.content_detail_v{
+	
+}
+.icon_banner_cdv,.icon_bc_dv{
+	width:17px;
+	height:17px;
+	background:url('/images/detail/icTitle@2x.png') no-repeat;
+	background-size:17px 17px;
+}
+.txt_banner_cdv,.icon_banner_cdv,.icon_bc_dv,.txt_bc_dv{
+	display:inline-block;
+	vertical-align:middle;
+	font-size:12px;
+	color:rgb(106,119,184);
+}
+.banner_content_dv,.banner_charge_dv{
+	margin:26px 0 18px 0;
+	text-indent:-4px;
+}
+.icon_period_idv,.icon_remain_idv,.icon_left_lidv{
+	background-size:18px 18px;
+	width:18px;
+	height:18px;
+}
+.icon_period_idv{
+	background-image:url('/images/detail/icTime@2x.png');
+}
+.icon_remain_idv{
+	background-image:url('/images/other/icon_room.png');
+}
+.icon_left_lidv{
+	background-image:url('/images/detail/icPlace@2x.png');
+}
+.arrow_location_idv{
+	display: inline-block;
+	vertical-align: middle;
+	width:20px;
+	height:20px;
+	background:url('/images/detail/icArrow.png') no-repeat;
+	background-size:20px 20px;
+}
+.txt_period_idv,
+.txt_remain_idv,
+.arrow_location_idv,
+.icon_period_idv,
+.icon_remain_idv,
+.icon_left_lidv{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.location_info_dv::after{
+	content:'';
+	clear:both;
+	display: block;
+}
+.arrow_location_idv{
+	float:right;
+	position:relative;
+	top:-3px;
+}
+.icon_head_lohdy{
+	width:150%;
+	border-radius:50%;
+}
+.logo_detail_vue{
+	height:98px;
+    padding-bottom: 50px;
+}
+.icon_logo_dv{
+	margin: 0 auto;
+	position:relative;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	    -ms-transform:translateY(-50%);
+	        transform:translateY(-50%);
+	width: 80px;
+	height:20px;
+	background:url('/images/detail/logo@2x.png') no-repeat;
+	background-size:80px 20px;
+}
+button{
+	position:relative;
+}
+.location_info_dv{
+	cursor: pointer;
+}
+.txt_left_lidv{
+	color:rgb(61,61,61);
+}
+.content_detail_v{
+	line-height:24px;
+}

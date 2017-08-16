@@ -1,0 +1,28 @@
+.dqld_div{
+	width: 100%;
+	background-color: rgba(128, 128, 128, 0.27);
+	position: absolute;
+	top: 0;
+	height: 100%;
+	overflow-y: scroll;
+	/* transform: translateY(-50%); */
+	left: 0;
+	z-index: 22;
+	box-sizing: border-box;
+}
+
+.dqld_div ul{
+	    /* width: 90%; */
+    height: 50%;
+    overflow-y: scroll;
+    position: relative;
+    top: 50%;
+    background-color: white;
+}
+
+.dqld_div ul li{
+	height:35px;
+	line-height:35px;
+	border-bottom:1px solid #cccccc;
+	padding-left:10px;
+}

@@ -1,0 +1,138 @@
+.book_detail_vue{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	background-color:rgba(0,0,0,0.5);
+	z-index:34;
+	box-sizing: border-box;
+}
+.container_ec_dv{
+	position:absolute;
+	width: 100%;
+	bottom:0;
+	left:0;
+	background-color:white;
+	padding:19px 21px 16px 21px;
+	box-sizing: border-box;
+	will-change:transform;
+	-webkit-transform:translate3d(0,0,0);
+	        transform:translate3d(0,0,0);
+}
+.title_container_ecdv{
+	font-size:12px;
+	color:rgb(61,61,61);
+	margin-bottom:18px;
+	text-align: center;
+}
+.leaf_box_cedcdv{
+	margin-bottom:20px;
+}
+.detail_leaf_bcv{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-align-items:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+}
+.price_leaf_lcv{
+	margin-left:10px;
+	font-size:15px;
+	color:rgb(235,59,144);
+}
+.name_leaf_lcv{
+	font-size:15px;
+	color:rgb(61,61,61);
+}
+.icon_check_llcv{
+	background:url('/images/detail/ic_normal@2x.png') no-repeat;
+	background-size:25px 25px;
+	width:25px;
+	height:25px;
+}
+
+input:checked+.icon_check_llcv{
+	background-image:url('/images/detail/ic_selected@2x.png');
+}
+.left_box_bcd{
+	font-size:12px;
+	color:rgb(179,179,179);
+	margin-top:7px;
+}
+.btn_container_ecdv{
+	background-color:rgb(242,243,247);
+	width:100%;
+	padding:10px 0;
+	color:rgb(133,154,230);
+	font-size:17px;
+	margin-bottom:12px;
+	text-align:center;
+	border-radius:3px;
+	border:1px solid rgba(0,0,0,0.12);
+	position:relative;
+}
+
+.deal_container_ecdv{
+	text-align:center;
+}
+.icon_deal_cev,.txt_deal_cev{
+	display: inline-block;
+	vertical-align: middle;
+	font-size:12px;
+	color:rgb(179,179,179);
+}
+.icon_deal_cev{
+	background:url('/images/detail/ic_agree@2x.png') no-repeat;
+	background-size:22px 22px;
+	width:22px;
+	height:22px;
+}
+
+.bookInfo_ec_dv{
+	position:absolute;
+	width:100%;
+	bottom:0;
+}
+.container_bookInfo_ecdv{
+	padding:6px 20px 16px 20px;
+	background-color:white;
+}
+.txt_container_eev{
+	font-size:13px;
+	color:rgb(128,130,140);
+}
+input.input_container_eev{
+	background-color:rgb(250,250,252);
+	border-radius:1px;
+	padding:11px 0 11px 15px;
+	box-sizing: border-box;
+	border:1px solid rgb(225,228,240);
+	width: 100%;
+	font-size:15px;
+	color:rgb(61,61,61);
+	margin-top:7px !important;
+}
+.leaf_container_eev{
+	margin-top:10px;
+}
+.btn_container_eev{
+	margin:20px 0 17px 0;
+	width: 100%;
+	padding:9px 0;
+	font-size:17px;
+	color:white;
+	text-align: center;
+	background-color:rgb(133,154,230);
+	border-radius:3px;
+	border:1px solid rgba(0,0,0,0.12);
+}
+.support_container_eev{
+	text-align:center;
+	font-size:12px;
+	color:rgb(179,179,179);
+}
